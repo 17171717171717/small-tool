@@ -1,17 +1,10 @@
 # pyinstaller
 def calculate_bb100(bb, hands_played, winnings):
-    """
-    計算 BB/100
-    :param winnings: 贏得的金額（大盲注的數量）
-    :param hands_played: 玩過的手牌數量
-    :param big_blind: 大盲注的金額
-    :return: BB/100
-    """
+
     if hands_played == 0:
         return 0
     return (winnings / (bb/100)) / (hands_played/100) 
 
-# 範例使用
 if __name__ == "__main__":
     while(1):
         bb = float(input("NL幾(1BB的金額*100): "))
